@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ระบบบันทึกการเยี่ยมบ้านนักเรียน</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600;700&family=K2D:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -36,7 +36,7 @@
   --shadow:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
   --shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
 }
-body{font-family:'Sarabun',sans-serif;background:var(--surface3);color:var(--text);min-height:100vh;font-size:15px}
+body{font-family:'K2D',sans-serif;background:var(--surface3);color:var(--text);min-height:100vh;font-size:15px}
 
 /* NAV */
 nav{background:var(--primary);color:#fff;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:58px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(26,86,219,.3)}
@@ -78,7 +78,7 @@ nav{background:var(--primary);color:#fff;padding:0 1.5rem;display:flex;align-ite
 .form-group.full{grid-column:1/-1}
 label{font-size:13px;font-weight:500;color:var(--text2)}
 .required::after{content:" *";color:var(--danger)}
-input,select,textarea{padding:8px 12px;border:1px solid var(--border);border-radius:7px;font-family:'Sarabun',sans-serif;font-size:14px;color:var(--text);background:var(--surface);transition:border-color .2s,box-shadow .2s;width:100%}
+input,select,textarea{padding:8px 12px;border:1px solid var(--border);border-radius:7px;font-family:'K2D',sans-serif;font-size:14px;color:var(--text);background:var(--surface);transition:border-color .2s,box-shadow .2s;width:100%}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
 textarea{resize:vertical;min-height:80px}
 .input-err{border-color:var(--danger)!important}
@@ -86,7 +86,7 @@ textarea{resize:vertical;min-height:80px}
 .phone-hint{font-size:12px;color:var(--text3)}
 
 /* BUTTONS */
-.btn{padding:9px 18px;border-radius:7px;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px}
+.btn{padding:9px 18px;border-radius:7px;font-family:'K2D',sans-serif;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-primary:hover{background:var(--primary-dark)}
 .btn-success{background:var(--accent);color:#fff}
@@ -106,7 +106,7 @@ textarea{resize:vertical;min-height:80px}
 
 /* TABLE */
 .dataTables_wrapper{font-size:14px}
-.dataTables_filter input{border:1px solid var(--border);border-radius:7px;padding:6px 10px;font-family:'Sarabun',sans-serif}
+.dataTables_filter input{border:1px solid var(--border);border-radius:7px;padding:6px 10px;font-family:'K2D',sans-serif}
 table.dataTable thead th{background:var(--surface2);font-weight:600;font-size:13px;color:var(--text2)}
 table.dataTable tbody tr:hover{background:var(--primary-light)}
 table.dataTable{border-collapse:collapse!important}
@@ -147,7 +147,7 @@ table.dataTable td,table.dataTable th{padding:9px 12px!important}
 
 /* CHART GRID */
 .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1.25rem;margin-top:1.25rem;}
-.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);font-family: "IBM Plex Sans Thai", sans-serif;}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);font-family: "K2D", sans-serif;}
 .chart-title{font-size:14px;font-weight:600;color:var(--text2);margin-bottom:1rem;text-align:center}
 canvas{max-height:250px}
 
@@ -175,9 +175,9 @@ canvas{max-height:250px}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* POPUP LEAFLET */
-.leaflet-popup-content{font-family:'Sarabun',sans-serif;font-size:13px;line-height:1.6}
+.leaflet-popup-content{font-family:'K2D',sans-serif;font-size:13px;line-height:1.6}
 .popup-name{font-weight:600;font-size:14px;color:var(--primary);margin-bottom:4px}
-.popup-btn{background:var(--primary);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-family:'Sarabun',sans-serif;font-size:12px;cursor:pointer;margin-top:6px;width:100%}
+.popup-btn{background:var(--primary);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-family:'K2D',sans-serif;font-size:12px;cursor:pointer;margin-top:6px;width:100%}
 </style>
 </head>
 <body>
