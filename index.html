@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ระบบบันทึกการเยี่ยมบ้านนักเรียน</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600;700&family=K2D:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -16,25 +16,25 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --primary:#1a56db;
-  --primary-dark:#1341a8;
-  --primary-light:#e8f0fe;
-  --accent:#059669;
-  --accent-light:#d1fae5;
-  --warning:#d97706;
-  --warning-light:#fef3c7;
-  --danger:#dc2626;
-  --danger-light:#fee2e2;
-  --surface:#ffffff;
-  --surface2:#f8fafc;
-  --surface3:#f1f5f9;
-  --border:#e2e8f0;
-  --text:#0f172a;
-  --text2:#475569;
-  --text3:#94a3b8;
-  --radius:10px;
-  --shadow:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
-  --shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+  --primary:#1a56db;
+  --primary-dark:#1341a8;
+  --primary-light:#e8f0fe;
+  --accent:#059669;
+  --accent-light:#d1fae5;
+  --warning:#d97706;
+  --warning-light:#fef3c7;
+  --danger:#dc2626;
+  --danger-light:#fee2e2;
+  --surface:#ffffff;
+  --surface2:#f8fafc;
+  --surface3:#f1f5f9;
+  --border:#e2e8f0;
+  --text:#0f172a;
+  --text2:#475569;
+  --text3:#94a3b8;
+  --radius:10px;
+  --shadow:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
 }
 body{font-family:'K2D',sans-serif;background:var(--surface3);color:var(--text);min-height:100vh;font-size:15px}
 
@@ -147,7 +147,7 @@ table.dataTable td,table.dataTable th{padding:9px 12px!important}
 
 /* CHART GRID */
 .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1.25rem;margin-top:1.25rem;}
-.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);font-family: "IBM Plex Sans Thai", sans-serif;}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);font-family: 'K2D', sans-serif;}
 .chart-title{font-size:14px;font-weight:600;color:var(--text2);margin-bottom:1rem;text-align:center}
 canvas{max-height:250px}
 
@@ -161,12 +161,12 @@ canvas{max-height:250px}
 
 /* RESPONSIVE */
 @media(max-width:640px){
-  nav{padding:0 1rem}
-  .nav-brand{font-size: 16px;}
-  .nav-tab span{display:none}
-  .page{padding:1rem}
-  #map-form,#map-view{height:250px}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  nav{padding:0 1rem}
+  .nav-brand{font-size: 16px;}
+  .nav-tab span{display:none}
+  .page{padding:1rem}
+  #map-form,#map-view{height:250px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 /* LOADING */
